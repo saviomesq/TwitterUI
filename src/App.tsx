@@ -8,6 +8,7 @@ import {
   FileText,
   Hash,
   House,
+  Sparkle,
   User,
 } from "phosphor-react";
 
@@ -55,7 +56,25 @@ function App() {
             Tweet
           </button>
         </aside>
-        <div className="content">content</div>
+        <div className="content">
+          <main className="timeline">
+            <div className="timeline-header">
+              Home <Sparkle />
+            </div>
+
+            <form className="new-tweet-form">
+              <label htmlFor="tweet">
+                <img
+                  src="https://github.com/saviomesq.png"
+                  alt="Savio Mesquita"
+                />
+                <textarea id="tweet" placeholder="What's happening?" />
+              </label>
+              <button type="submit">Tweet</button>
+            </form>
+            <div className="separator" />
+          </main>
+        </div>
       </div>
     </>
   );
