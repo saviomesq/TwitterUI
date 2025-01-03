@@ -1,5 +1,6 @@
 import { Header } from "../../components/Header/Header";
 import { Separator } from "../../components/Separator/Separator";
+import { Textarea } from "../../components/Textarea/Textarea";
 import { Tweet } from "../../components/Tweet/Tweet";
 import "./Timeline.css";
 const tweets = [
@@ -16,7 +17,7 @@ export const Timeline = () => {
       <form className="new-tweet-form">
         <label htmlFor="tweet">
           <img src="https://github.com/saviomesq.png" alt="Savio Mesquita" />
-          <textarea id="tweet" placeholder="What's happening?" />
+          <Textarea placeholder="What is happening?!" />
         </label>
         <button type="submit">Tweet</button>
       </form>

@@ -1,6 +1,6 @@
 import "./global.css";
 import { Sidebar } from "./components/Sidebar/Sidebar";
-import { AppRoutes } from "./Routes/Routes";
+import { AppRoutes } from "./Routes/routes";
 function App() {
   return (
     <>

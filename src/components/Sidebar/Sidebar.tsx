@@ -9,16 +9,18 @@ import {
   House,
   User,
 } from "phosphor-react";
+
+import { NavLink } from "react-router-dom";
 import twitterLogo from "../../assets/logo-twitter.svg";
 export const Sidebar = () => {
   return (
     <aside className="sidebar">
       <img className="logo" src={twitterLogo} alt="Logo" />
       <nav className="main-navegation">
-        <a className="active" href="">
+        <NavLink to="/">
           <House weight="fill" />
           Home
-        </a>
+        </NavLink>
         <a href="">
           <Hash />
           Explore
