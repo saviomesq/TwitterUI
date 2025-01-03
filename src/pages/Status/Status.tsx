@@ -1,7 +1,7 @@
 import { Header } from "../../components/Header/Header";
 import { Separator } from "../../components/Separator/Separator";
 import { Tweet } from "../../components/Tweet/Tweet";
-
+import "./Status.css";
 const answers = [
   "Explorando novas tecnologias!",
   "Adoro programar!",
@@ -12,6 +12,11 @@ export const Status = () => {
   return (
     <main className="status">
       <Header title="Tweet" />
+      <Tweet
+        content="    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis distinctio non, sed illo officia! Tenetur optio exercitationem dolorem nulla magni ipsam animi libero dolores nisi, pariatur debitis saepe mollitia?
+"
+      />
+      <Separator />
       <form className="answer-tweet-form">
         <label htmlFor="tweet">
           <img src="https://github.com/saviomesq.png" alt="Savio Mesquita" />
@@ -19,7 +24,6 @@ export const Status = () => {
         </label>
         <button type="submit">Answer</button>
       </form>
-      <Separator />
       {answers.map((answers, index) => (
         <Tweet key={index} content={answers} />
       ))}
