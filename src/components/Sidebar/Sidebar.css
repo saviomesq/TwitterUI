@@ -10,6 +10,11 @@
   height: 2rem;
 }
 
+.sidebar .new-tweet svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+}
 .sidebar .new-tweet {
   background: var(--twitter-blue);
   border-radius: 9999px;
@@ -48,4 +53,20 @@
 .main-navegation a svg {
   width: 2rem;
   height: 2rem;
+}
+
+@media (max-width: 780px) {
+  .sidebar {
+    padding: 1.5rem 0.75rem;
+    align-items: center;
+  }
+  .main-navegation a span {
+    display: none;
+  }
+  .sidebar .new-tweet svg {
+    display: block;
+  }
+  .sidebar .new-tweet span {
+    display: none;
+  }
 }

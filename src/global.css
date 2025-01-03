@@ -28,8 +28,6 @@ a {
   color: inherit;
 }
 
-/* page: Time line */
-
 .layout {
   margin: 0 auto;
   max-width: 1000px;
@@ -40,4 +38,15 @@ a {
 .content {
   border-left: 1px solid #ebeef0;
   border-right: 1px solid #ebeef0;
+}
+
+@media (max-width: 780px) {
+  .layout {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .content {
+    border-left: none;
+    border-right: none;
+  }
 }
